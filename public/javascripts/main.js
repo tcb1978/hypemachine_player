@@ -6,8 +6,11 @@ $.ajax({
         artist = (dataFromTheServer[i].artist);
         album = (dataFromTheServer[i].album);
         art = (dataFromTheServer[i].artwork_url);
-        $("#trackData").append('<table border="1" cellpadding="5" cellspacing="5"><tbody><tr><th>Artist: ' + '<em>' + artist + '</em>' + '</th><tr><th>Featured Album: ' + '<em>' + album + '</em>' + '</th></tr><td><img class="album-artwork" src="" alt="artwork featured with this album"></td></tr></tbody></table>');
+        $("#trackData").append('<tbody><tr><td class="tdata"><img class="album-artwork" src="" alt="artwork featured with this album"></td><th class="head">Artist: ' + '<em>' + artist + ',' + '</em>' + '</th><th class="head">Featured Album: ' + '<em>' + album + '</em>' + '</th></tr></tbody>');
         $('img.album-artwork').attr({src: art});
+        $('#trackData, .head').addClass('col-xs-4 col-md-6');
+        $('').addClass('col-xs-4 col-md-2')
+
     }
 }).error(function(xhr, status, msg){
     alert("something went wrong");

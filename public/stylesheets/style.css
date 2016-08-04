@@ -6,3 +6,17 @@ body {
 a {
   color: #00B7FF;
 }
+
+img.album-artwork {
+    height: 10%;
+    width:auto;
+}
+
+td.tdata {
+    height: 10%;
+    width: 10%;
+}
+
+th.head {
+    text-align: left;
+}
