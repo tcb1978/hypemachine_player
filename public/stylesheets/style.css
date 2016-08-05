@@ -7,16 +7,21 @@ a {
   color: #00B7FF;
 }
 
-img.album-artwork {
-    height: 10%;
-    width:auto;
-}
+/*img.album-artwork {*/
+    /*height: 10%;*/
+    /*width:auto;*/
+/*}*/
 
 td.tdata {
     height: 10%;
     width: 10%;
 }
 
-th.head {
+th.head,
+th div.head{
     text-align: left;
+}
+
+a.siteurl {
+    display: block;
 }
