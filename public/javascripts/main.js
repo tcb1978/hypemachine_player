@@ -11,14 +11,12 @@ $.ajax({
         type = (dataFromTheServer[i].type);
         if (type == 'premiere'){
             $("#trackData").append(
-                '<tbody>' +
                 '<tr>' +
                     '<td class="head"><img class="album-artwork" src="" alt="artwork featured with this album"></td>' +
                     '<td class="head"><a class="siteurl" href="">SOUNDCLOUD</a></td>' +
                     '<td class="head">' + artist + '</td>' +
                     '<td class="head">' + album + '</td>' +
-                '</tr>' +
-                '</body>');
+                '</tr>');
             $('.siteurl').attr({href: soundcloud});
             $('img.album-artwork').attr({src: art});
             $('.head').addClass('col-xs-4 col-md-6');
