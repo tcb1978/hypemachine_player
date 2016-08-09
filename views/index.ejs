@@ -1,33 +1,50 @@
-<!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Hype Machine</h1>
-    <div class="container-fluid">
-      <table border="1">
-        <thead>
-          <tr>
-            <th class="head"></th>
-            <th class="head"></th>
-            <th class="head" scope="col">Artist: </th>
-            <th class="head" scope="col">Featured Album: </th>
-          </tr>
-        </thead>
-        <tbody id="trackData"></tbody>
-      </table>
-    </div>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="/javascripts/main.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-  <body>
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="/stylesheets/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<h1>Hype Machine</h1>
+<div class="container-fluid">
+  <div class="row">
+    <table border="1">
+      <thead>
+      <tr>
+        <th>
+          <div class="head button">
+            <button class="btn btn-default" type="submit">Button</button>
+          </div>
+        </th>
+        <th>
+          <div class="head">
+            <p></p>
+          </div>
+        </th>
+        <th>
+          <div class="head artist-album">
+            <p>Artist: </p>
+          </div>
+        </th>
+        <th>
+          <div class="head artist-album">
+            <p>Featured Album: </p>
+          </div>
+        </th>
+      </tr>
+      </thead>
+      <tbody id="trackData"></tbody>
+    </table>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="/javascripts/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<body>
 </html>
 
 
