@@ -12,14 +12,13 @@ $.ajax({
         if (type == 'premiere'){
             $("#trackData").append(
                 '<tr>' +
-                '<td><div class="head"><img class="album-artwork" src="" alt="artwork featured with this album"></div></td>' +
-                '<td><div class="head"><a class="siteurl" href="">SOUNDCLOUD</a></div></td>' +
-                '<td><div class="head">' + artist + '</div></td>' +
-                '<td><div class="head">' + album + '</div></td>' +
+                '<td><div class="col-xs-4 col-md-6"><img class="album-artwork" src="" alt="artwork featured with this album"></div></td>' +
+                '<td><div class="col-xs-4 col-md-6"><a class="siteurl" href="">SOUNDCLOUD</a></div></td>' +
+                '<td><div class="col-xs-4 col-md-6">' + artist + '</div></td>' +
+                '<td><div class="col-xs-4 col-md-6">' + album + '</div></td>' +
                 '</tr>');
             $('.siteurl').attr({href: soundcloud});
             $('img.album-artwork').attr({src: art});
-            $('.head').addClass('col-xs-4 col-md-6');
         }
     }
 }).error(function(xhr, status, msg){
