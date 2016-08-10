@@ -28,8 +28,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.522963">
-              <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.7176259">
+              <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -39,13 +39,13 @@
         <entry file="file://$PROJECT_DIR$/public/javascripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+              <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
               <folding>
-                <marker date="1470802308000" expanded="true" signature="772:1370" placeholder="..." />
-                <marker date="1470802308000" expanded="true" signature="772:1681" placeholder="..." />
-                <marker date="1470802308000" expanded="true" signature="1335:1370" placeholder="..." />
-                <marker date="1470802308000" expanded="true" signature="1366:1370" placeholder="..." />
-                <marker date="1470802308000" expanded="true" signature="1418:1665" placeholder="..." />
+                <marker date="1470805224000" expanded="true" signature="869:1403" placeholder="..." />
+                <marker date="1470805224000" expanded="true" signature="869:1954" placeholder="..." />
+                <marker date="1470805224000" expanded="true" signature="1368:1403" placeholder="..." />
+                <marker date="1470805224000" expanded="true" signature="1399:1403" placeholder="..." />
+                <marker date="1470805224000" expanded="true" signature="1451:1938" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -84,8 +84,9 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
+    <option name="y" value="26" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="703" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -231,7 +232,6 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="FullScreen" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -422,11 +422,17 @@
       <option name="project" value="LOCAL" />
       <updated>1470799730081</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add &lt;audio&gt;">
+      <created>1470802389996</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1470802389996</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1280" height="800" extended-state="0" />
+    <frame x="0" y="26" width="1280" height="703" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1223193" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -488,7 +494,8 @@
     <MESSAGE value="include BS classes in markup and clean out code" />
     <MESSAGE value="track and audio" />
     <MESSAGE value="clean up" />
-    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
+    <MESSAGE value="add &lt;audio&gt;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add &lt;audio&gt;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -508,11 +515,11 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
           <folding>
-            <marker date="1470802308000" expanded="true" signature="772:1370" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="772:1681" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="1335:1370" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="1366:1370" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="1418:1665" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="869:1403" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="869:1954" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="1368:1403" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="1399:1403" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="1451:1938" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -623,21 +630,21 @@
     <entry file="file://$PROJECT_DIR$/public/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="65" selection-start-line="22" selection-start-column="65" selection-end-line="22" selection-end-column="65" />
+          <caret line="31" column="48" selection-start-line="31" selection-start-column="48" selection-end-line="31" selection-end-column="48" />
           <folding>
-            <marker date="1470802308000" expanded="true" signature="772:1370" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="772:1681" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="1335:1370" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="1366:1370" placeholder="..." />
-            <marker date="1470802308000" expanded="true" signature="1418:1665" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="869:1403" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="869:1954" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="1368:1403" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="1399:1403" placeholder="..." />
+            <marker date="1470805224000" expanded="true" signature="1451:1938" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.522963">
-          <caret line="23" column="18" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.7176259">
+          <caret line="24" column="30" selection-start-line="24" selection-start-column="30" selection-end-line="24" selection-end-column="30" />
           <folding />
         </state>
       </provider>
