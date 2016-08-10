@@ -13,16 +13,20 @@ $.ajax({
                 var sitename = (data.sitename);
                 var soundcloud = (data.soundcloud_set);
                 var title = (data.tracks[j].title);
+                var audio = (data.tracks[j].stream_url);
                 $("#trackData").append(
                     '<tr>' +
                     '<td><div class="col-xs-4 col-md-6"><img class="album-artwork" src="'+ art +'" alt="artwork featured with this album"></div></td>' +
                     '<td><div class="col-xs-4 col-md-6"><a class="siteurl" href="'+ soundcloud +'">SOUNDCLOUD</a></div></td>' +
                     '<td><div class="col-xs-4 col-md-6">' + artist + '</div></td>' +
                     '<td><div class="col-xs-4 col-md-6">' + album + '</div></td>' +
+                    '<td><div class="col-xs-4 col-md-6">' + title + '</div></td>' +
                     '<td><div class="col-xs-4 col-md-6">' +
-                    //'<audio class="audio" src=""></audio>' +
-                    title + '</div></td>' +
-                    '</tr>');
+                    '<audio controls="controls">' +
+                    '<source src="' + audio + '" type="audio/ogg">' +
+                    '<source src="' + audio + '" type="audio/mpeg">' +
+                    'Your browser does not support the audio element.' +
+                    '</audio></div></td></tr>');
             }
         }
     }
