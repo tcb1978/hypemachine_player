@@ -19,15 +19,14 @@ $.ajax({
                 '</tr>');
             $('.siteurl').attr({href: soundcloud});
             $('img.album-artwork').attr({src: art});
-            for (var j = 0; j < dataFromTheServer.length; j++){
-                track = (dataFromTheServer[j].stream_url);
-                title = (dataFromTheServer[j].track);
-                if (type == 'premiere') {
+
+            for (var j = 0; j < dataFromTheServer[j].tracks.length; j++){
+                track = (dataFromTheServer[j].tracks.stream_url);
+                title = (dataFromTheServer[j].tracks.title);
                     $("#trackData tr").append(
-                    '<td><div class="col-xs-4 col-md-6">' + title + '<audio class="audio" src=""></audio></div></td>');
+                    '<td><div class="col-xs-4 col-md-6"><audio class="audio" src=""></audio></div></td>');
                     $('audio.audio').attr({src: track});
-                    $('.track').append(title);
-                }
+                    $('.track').append( title);
             }
         }
     }
