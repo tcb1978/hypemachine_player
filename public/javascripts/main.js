@@ -21,10 +21,11 @@ $.ajax({
             $('img.album-artwork').attr({src: art});
             for (var j = 0; j < dataFromTheServer.length; j++){
                 track = (dataFromTheServer[j].stream_url);
-                title = (dataFromTheServer[j].title);
+                title = (dataFromTheServer[j].track);
                 if (type == 'premiere') {
                     $("#trackData tr").append(
-                    '<td><div class="col-xs-4 col-md-6"><audio src="">' + title + '</audio></div></td>');
+                    '<td><div class="col-xs-4 col-md-6">' + title + '<audio class="audio" src=""></audio></div></td>');
+                    $('audio.audio').attr({src: track});
                     $('.track').append(title);
                 }
             }
