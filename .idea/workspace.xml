@@ -28,8 +28,8 @@
       <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/index.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.8333333">
-              <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+            <state vertical-scroll-proportion="-1.7037038">
+              <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
               <folding />
             </state>
           </provider>
@@ -38,9 +38,11 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/public/javascripts/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80627304">
-              <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
-              <folding />
+            <state vertical-scroll-proportion="0.53321034">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="44" />
+              <folding>
+                <marker date="1470793249000" expanded="true" signature="573:1008" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -368,7 +370,13 @@
       <option name="project" value="LOCAL" />
       <updated>1470769247417</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="track and audio">
+      <created>1470792674149</created>
+      <option name="number" value="00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1470792674149</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -432,7 +440,8 @@
     <MESSAGE value="include Bootstrap" />
     <MESSAGE value="found syntax error" />
     <MESSAGE value="include BS classes in markup and clean out code" />
-    <option name="LAST_COMMIT_MESSAGE" value="include BS classes in markup and clean out code" />
+    <MESSAGE value="track and audio" />
+    <option name="LAST_COMMIT_MESSAGE" value="track and audio" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -451,7 +460,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="56" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1470793249000" expanded="true" signature="573:1008" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -560,17 +571,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/index.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8333333">
-          <caret line="43" column="36" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="36" />
+        <state vertical-scroll-proportion="-1.7037038">
+          <caret line="38" column="14" selection-start-line="38" selection-start-column="14" selection-end-line="38" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascripts/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80627304">
-          <caret line="26" column="84" selection-start-line="26" selection-start-column="84" selection-end-line="26" selection-end-column="84" />
-          <folding />
+        <state vertical-scroll-proportion="0.53321034">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="44" />
+          <folding>
+            <marker date="1470793249000" expanded="true" signature="573:1008" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

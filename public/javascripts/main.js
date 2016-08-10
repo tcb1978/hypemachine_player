@@ -24,8 +24,8 @@ $.ajax({
                 title = (dataFromTheServer[j].title);
                 if (type == 'premiere') {
                     $("#trackData tr").append(
-                    '<td><div class=\"col-xs-4 col-md-6\"><audio src="">' + title + '</audio></div></td></tr>');
-                    $('audio').attr({src: track});
+                    '<td><div class="col-xs-4 col-md-6"><audio src="">' + title + '</audio></div></td>');
+                    $('.track').append(title);
                 }
             }
         }
