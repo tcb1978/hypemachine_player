@@ -19,6 +19,15 @@ $.ajax({
                 '</tr>');
             $('.siteurl').attr({href: soundcloud});
             $('img.album-artwork').attr({src: art});
+            for (var j = 0; j < dataFromTheServer.length; j++){
+                track = (dataFromTheServer[j].stream_url);
+                title = (dataFromTheServer[j].title);
+                if (type == 'premiere') {
+                    $("#trackData tr").append(
+                    '<td><div class=\"col-xs-4 col-md-6\"><audio src="">' + title + '</audio></div></td></tr>');
+                    $('audio').attr({src: track});
+                }
+            }
         }
     }
 }).error(function(xhr, status, msg){
