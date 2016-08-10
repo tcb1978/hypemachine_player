@@ -3,18 +3,17 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+td {
+    white-space: nowrap;
+}
+
 a {
   color: #00B7FF;
 }
 
 img.album-artwork {
-    height: 80%;
-    width:auto;
-}
-
-td.tdata {
-    height: 10%;
-    width: 10%;
+    height: 64px;
+    width: 64px;
 }
 
 th.head,
