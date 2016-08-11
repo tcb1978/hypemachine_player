@@ -28,8 +28,8 @@ $.ajax({
                     '<td><div class="col-xs-4 col-md-6"><a href="' + label + '">' + label + '</a></div></td>' +
                     '<td><div class="col-xs-4 col-md-6"><a class="siteurl" href="'+ soundcloud +'">SOUNDCLOUD</a></div></td>' +
                     '</tr>');
+                var $this = $(this);
                 $('#' + track_id ).on('click',function(){
-                    console.log('Here!');
                     $("#playerElements" ).append('<li>' +
                         '<a href="' + artistUrl + '">' +
                         '<img class="album-artwork" src="'+ art +'" alt="artwork featured with this album"></a></li>' +
