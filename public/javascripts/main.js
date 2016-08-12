@@ -28,9 +28,8 @@ $.ajax({
                     '<td><div class="col-xs-4 col-md-6"><a href="' + label + '">' + label + '</a></div></td>' +
                     '<td><div class="col-xs-4 col-md-6"><a class="siteurl" href="'+ soundcloud +'">SOUNDCLOUD</a></div></td>' +
                     '</tr>');
-                var $this = $(this);
-                $('#' + track_id ).on('click',function(){
-                    $("#playerElements" ).append('<li>' +
+                var includePlayerToPage = function(){
+                    $("#playerElements" ).append('<li><ul class="list-inline">' +
                         '<a href="' + artistUrl + '">' +
                         '<img class="album-artwork" src="'+ art +'" alt="artwork featured with this album"></a></li>' +
                         '<li><a href="' + artistUrl + '">' + artist + '</a></li>' +
@@ -41,7 +40,10 @@ $.ajax({
                         '<source src="' + audio + '" type="audio/ogg">' +
                         '<source src="' + audio + '" type="audio/mpeg">' +
                         'Your browser does not support the audio element.' +
-                        '</audio></li>');
+                        '</audio></li></ul>');
+                }
+                var openPlayer = $('#' + track_id ).on('click',function(){
+                    includePlayerToPage();
                 })
             }
         }
