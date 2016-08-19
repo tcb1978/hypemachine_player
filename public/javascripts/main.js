@@ -20,36 +20,44 @@ $.ajax({
                 var track_id = "track_row_" + data.tracks[j].sc_id;
                 var tr = $("#trackData").append(
                     '<tr id="'+track_id+'">' +
-                    '<td><div class="col-xs-4 col-md-6"><a href="' + artistUrl + '">' +
-                    '<img class="album-artwork" src="'+ art +'" alt="artwork featured with this album"></a></div></td>' +
-                    '<td><div class="col-xs-4 col-md-6"><a href="' + artistUrl + '">' + artist + '</a></div></td>' +
-                    '<td><div class="col-xs-4 col-md-6">' + album + '</div></td>' +
-                    '<td><div class="col-xs-4 col-md-6">' + title + '</div></td>' +
-                    '<td><div class="col-xs-4 col-md-6"><a href="' + label + '">' + label + '</a></div></td>' +
-                    '<td><div class="col-xs-4 col-md-6"><a class="siteurl" href="'+ soundcloud +'">SOUNDCLOUD</a></div></td>' +
+                        '<td><div class="col-xs-4 col-md-6"><a href="' + artistUrl + '">' +
+                        '<img class="album-artwork tdArt" src="'+ art +'" alt="artwork featured with this album"></a></div></td>' +
+                        '<td><div class="col-xs-4 col-md-6"><a class="tdArtistUrlName" href="' + artistUrl + '">' + artist + '</a></div></td>' +
+                        '<td><div class="col-xs-4 col-md-6"><span  class="tdArtistAlbum">' + album + '</span></div></td>' +
+                        '<td><div class="col-xs-4 col-md-6"><span  class="tdArtistTitle">' + title + '</span></div></td>' +
+                        '<td><div class="col-xs-4 col-md-6"><a  class="tdArtistLabel" href="' + label + '">' + label + '</a></div></td>' +
+                        '<td><div class="col-xs-4 col-md-6"><a class="tdArtistSoundCloud siteurl" href="'+ soundcloud +'">SOUNDCLOUD</a></div></td>' +
                     '</tr>');
-                var includePlayerToPage = function(){
-                    $("#playerElements" ).append('<li><ul class="list-inline">' +
-                        '<a href="' + artistUrl + '">' +
-                        '<img class="album-artwork" src="'+ art +'" alt="artwork featured with this album"></a></li>' +
-                        '<li><a href="' + artistUrl + '">' + artist + '</a></li>' +
-                        '<li>' + album + '</li>' +
-                        '<li>' + title + '</li>' +
-                        '<li>' +
-                        '<audio controls="controls">' +
-                        '<source src="' + audio + '" type="audio/ogg">' +
-                        '<source src="' + audio + '" type="audio/mpeg">' +
-                        'Your browser does not support the audio element.' +
-                        '</audio></li></ul>');
-                }
-                var openPlayer = $('#' + track_id ).on('click',function(){
-                    includePlayerToPage();
-                })
             }
         }
-    }
+    }$('tr').on('click', function(e){
+        e.preventDefault();
+        var $this = $(this);
+        var link_url = $this.find('a:first' ).attr('href')
+        var link_art = $this.find('img:first' ).attr('src')
+        var artistName = $this.find('.tdArtistUrlName').text()
+        $('#playerElements' ).append(
+            '<tr id="'+track_id+'">' +
+            '<td><div class="col-xs-4 col-md-6"><a href="' + artistUrl + '">' +
+            '<img class="album-artwork tdArt" src="'+ art +'" alt="artwork featured with this album"></a></div></td>' +
+            '<td><div class="col-xs-4 col-md-6"><a class="tdArtistUrlName" href="' + artistUrl + '">' + artist + '</a></div></td>' +
+                '<td>' +
+                    '<div class="col-xs-4 col-md-6">' +
+                        '<audio controls>' +
+                            '<source src="" type="audio/ogg">' +
+                            '<source src="" type="audio/mpeg">' +
+                        '</audio>' +
+            '       </div>>' +
+                '</td>>' +
+                '<td><div class="col-xs-4 col-md-6"><span  class="tdArtistAlbum">Album: ' + album + '</span></div></td>' +
+                '<td><div class="col-xs-4 col-md-6"><span  class="tdArtistTitle">Song: ' + title + '</span></div></td>' +
+            '</tr>'
+        );
+        console.log('HERE HERE HERE HERE')
+    });
 }).error(function(xhr, status, msg){
     alert("something went wrong");
 })
+
 
 
